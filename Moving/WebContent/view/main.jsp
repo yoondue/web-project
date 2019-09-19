@@ -32,6 +32,7 @@
 section {
 	padding-top: 120px;
 	padding-bottom: 100px;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 .d-block, .card {

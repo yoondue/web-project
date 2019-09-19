@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 <style type="text/css">
 footer {
+	font-family: 'Noto Sans KR', sans-serif;
 	width: 100%;
 	background-color: #F6F5EA;
 	text-align: center;

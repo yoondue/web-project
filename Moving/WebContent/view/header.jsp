@@ -16,6 +16,9 @@
 	rel="stylesheet" />
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR&display=swap"
+	rel="stylesheet">
 
 <style>
 @media ( min-width : 768px) {
@@ -25,6 +28,7 @@
 }
 
 header {
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 15px;
 	width: 100%;
 }
@@ -213,12 +217,12 @@ input[type=checkbox]:checked+label:after {
 		</nav>
 	</header>
 	<script type="text/javascript">
-		$(function(){
-			$("#user").click(function(){
+		$(function() {
+			$("#user").click(function() {
 				// 추후 작업: if문으로 조건 걸기 - login, logout에 따라
 				// login
 				location.href = "login.jsp"
-				
+
 				// logout
 				//location.href = "my_page.jsp"
 			});

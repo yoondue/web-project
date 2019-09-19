@@ -7,13 +7,14 @@
 <title>Insert title here</title>
 <style type="text/css">
 body {
-	background-image: url("images/ticket.jpg");
+	background-image: url("../images/ticket.jpg");
 	background-size: cover;
 	background-repeat: none;
 }
 
 section {
 	padding-top: 120px;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 button {

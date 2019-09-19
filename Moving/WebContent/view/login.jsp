@@ -14,6 +14,7 @@ body {
 
 section {
 	padding-top: 120px;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 button {

@@ -10,6 +10,10 @@
 <meta name="Resource-type" content="Document" />
 <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
 <style type="text/css">
+.section {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
 #section1 {
 	background-image: url("../images/welcome1.jpg");
 	background-size: cover;
@@ -34,15 +38,15 @@
 }
 </style>
 <script type="text/javascript">
-window.onload=function(){
-    // 페이지가 로딩된 후 실행해야 되는 코드를 추가한다.
-    alert(request.getParameter("uid"));
-    /* if(request.getParameter("uid").equals("")) {
-    	alert("!");
-    } else {
-    	alert("${user.uid }" + "님 안녕하세요!");
-    } */
-}
+	window.onload = function() {
+		// 페이지가 로딩된 후 실행해야 되는 코드를 추가한다.
+		alert(request.getParameter("uid"));
+		/* if(request.getParameter("uid").equals("")) {
+			alert("!");
+		} else {
+			alert("${user.uid }" + "님 안녕하세요!");
+		} */
+	}
 </script>
 </head>
 <body>
