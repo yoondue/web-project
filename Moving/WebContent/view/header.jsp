@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Moving</title>
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link
-	href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR&display=swap"
+	href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
 	rel="stylesheet">
 
 <style>
@@ -110,7 +110,7 @@ input[type=checkbox]:checked+label:after {
 	content: '\2714';
 	font-size: 10px;
 }
-
+/*  */
 .dropdown-menu {
 	border: none;
 	background-color: rgba(239, 238, 238, 0.9);
@@ -132,6 +132,10 @@ input[type=checkbox]:checked+label:after {
 #searchExitBtn {
 	background-color: #61656A;
 }
+
+#user {
+	cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -143,7 +147,7 @@ input[type=checkbox]:checked+label:after {
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">¡Ú</button>
+				aria-label="Toggle navigation">â˜…</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
@@ -152,39 +156,39 @@ input[type=checkbox]:checked+label:after {
 						aria-haspopup="true" aria-expanded="false"><i
 							class="fa fa-bars" id="menu"></i></a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<p style="padding: 30px 0 0 150px;">Àå¸£º°&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-								&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ÆòÁ¡º°</p>
+							<p style="padding: 30px 0 0 150px;">ì¥ë¥´ë³„&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+								&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;í‰ì ë³„</p>
 							<form action="search_result.jsp" method="get" id="ck_search">
 								<div style="float: left; margin: 0 40px 30px 50px;">
 									<br> <input type="checkbox" name="romance" value="romance"
-										id="chk1"><label for="chk1"></label>µå¶ó¸¶<br> <input
+										id="chk1"><label for="chk1"></label>ë“œë¼ë§ˆ<br> <input
 										type="checkbox" name="romance" value="romance" id="chk2"><label
-										for="chk2"></label>½º¸±·¯<br> <input type="checkbox"
+										for="chk2"></label>ìŠ¤ë¦´ëŸ¬<br> <input type="checkbox"
 										name="romance" value="romance" id="chk3"><label
-										for="chk3"></label>ÄÚ¹Ìµğ<br> <input type="checkbox"
+										for="chk3"></label>ì½”ë¯¸ë””<br> <input type="checkbox"
 										name="romance" value="romance" id="chk4"><label
-										for="chk4"></label>¾×¼Ç
+										for="chk4"></label>ì•¡ì…˜
 								</div>
 								<div style="float: left; margin: 0 40px 30px 0;">
 									<br> <input type="checkbox" name="romance" value="romance"
-										id="chk5"> <label for="chk5"></label>·Î¸Ç½º<br> <input
+										id="chk5"> <label for="chk5"></label>ë¡œë§¨ìŠ¤<br> <input
 										type="checkbox" name="romance" value="romance" id="chk6"><label
-										for="chk6"></label>°øÆ÷<br> <input type="checkbox"
+										for="chk6"></label>ê³µí¬<br> <input type="checkbox"
 										name="romance" value="romance" id="chk7"><label
-										for="chk7"></label>¾Ö´Ï¸ŞÀÌ¼Ç<br> <input type="checkbox"
+										for="chk7"></label>ì• ë‹ˆë©”ì´ì…˜<br> <input type="checkbox"
 										name="romance" value="romance" id="chk8"><label
-										for="chk8"></label>´À¿Í¸£<br> <br> <br> <input
-										type="submit" value="°Ë»öÇÏ±â" id="searchBtn">
+										for="chk8"></label>ëŠì™€ë¥´<br> <br> <br> <input
+										type="submit" value="ê²€ìƒ‰í•˜ê¸°" id="searchBtn">
 								</div>
 								<div style="float: left; margin: 0 40px 30px 0;">
 									<br> <input type="checkbox" name="romance" value="romance"
-										id="chk9"><label for="chk9"></label> ÆÇÅ¸Áö<br> <input
+										id="chk9"><label for="chk9"></label> íŒíƒ€ì§€<br> <input
 										type="checkbox" name="romance" value="romance" id="chk10"><label
 										for="chk10"></label>SF<br> <input type="checkbox"
 										name="romance" value="romance" id="chk11"><label
-										for="chk11"></label>´ÙÅ¥¸àÅÍ¸®<br> <input type="checkbox"
+										for="chk11"></label>ë‹¤íë©˜í„°ë¦¬<br> <input type="checkbox"
 										name="romance" value="romance" id="chk12"><label
-										for="chk12"></label>¹ÂÁöÄÃ
+										for="chk12"></label>ë®¤ì§€ì»¬
 								</div>
 
 								<div style="float: right; margin: 0 80px 30px 50px;">
@@ -195,7 +199,7 @@ input[type=checkbox]:checked+label:after {
 										name="highStar" value="highStar"><label for="chk15"></label>3.1~4.0
 									<br> <input type="checkbox" name="topStar" value="topStar"><label
 										for="chk16"></label>4.1~5.0<br> <br> <br> <input
-										type="button" value="´İ±â" id="searchExitBtn">
+										type="button" value="ë‹«ê¸°" id="searchExitBtn">
 								</div>
 
 							</form>
@@ -203,7 +207,7 @@ input[type=checkbox]:checked+label:after {
 				</ul>
 
 				<form class="search">
-					<input type="text" placeholder="°Ë»ö¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä.">
+					<input type="text" placeholder="ê²€ìƒ‰ì–´ë¥¼ ì…ë ¥í•˜ì„¸ìš”.">
 					<button type="submit">
 						<i class="fa fa-search"></i>
 					</button>
@@ -219,7 +223,7 @@ input[type=checkbox]:checked+label:after {
 	<script type="text/javascript">
 		$(function() {
 			$("#user").click(function() {
-				// ÃßÈÄ ÀÛ¾÷: if¹®À¸·Î Á¶°Ç °É±â - login, logout¿¡ µû¶ó
+				// ì¶”í›„ ì‘ì—…: ifë¬¸ìœ¼ë¡œ ì¡°ê±´ ê±¸ê¸° - login, logoutì— ë”°ë¼
 				// login
 				location.href = "login.jsp"
 

@@ -1,4 +1,4 @@
-<%@page import="com.model.User"%>
+<%-- <%@page import="com.model.User"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" import="java.sql.*"%>
 
@@ -64,4 +64,4 @@
 	} catch (SQLException e) {
 		e.printStackTrace();
 	}
-%>
+%> --%>
