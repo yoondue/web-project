@@ -29,8 +29,7 @@ footer {
 	padding: 10px;
 	width: 120px;
 	margin-left: 10px;
-	margin-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 form {

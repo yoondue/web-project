@@ -28,7 +28,8 @@
 <!-- 			parameterType="파라미터로 전달될 객체의 클래스 타입" -->
 <!-- 			resultMap="리턴될 Beans의 id"> -->
 
-	<select id="selectMember"
+	<!-- AdminPage's memberList -->
+	<select id="selectMemberList"
 		parameterType="com.dto.Member"
 	 	resultMap="member">
 		<!-- 이 안에서 처리할 SQL문을 명시한다. -->
@@ -38,5 +39,10 @@
 		FROM member
 		ORDER BY id ASC
 	</select>
+	
+	<!-- JoinPage's Email/Nickname Duplicate Check -->
+	
+	
+	
 
 </mapper>

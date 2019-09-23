@@ -10,17 +10,17 @@ import javax.servlet.http.HttpServletResponse;
 import com.helper.BaseController;
 
 /**
- * Servlet implementation class Join
+ * Servlet implementation class MovieInfo
  */
-@WebServlet("/join.do")
-public class Join extends BaseController {
-       
-	private static final long serialVersionUID = 8039497732399319792L;
+@WebServlet("/movie_info.do")
+public class MovieInfo extends BaseController {
+
+	private static final long serialVersionUID = 1785522404768678079L;
 
 	@Override
 	public String doRun(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		return "join";
+		return "movie_info";
 	}
 
 }

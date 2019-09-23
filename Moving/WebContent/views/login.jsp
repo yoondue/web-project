@@ -80,7 +80,9 @@ button:focus {
 			<div class="row">
 				<div class="col-md-10"></div>
 				<div class="col-md-2">
-					<button id="joinBtn" onclick="location.href ='join.jsp'">회원가입</button>
+					<button id="joinBtn">
+						<a href="${pageContext.request.contextPath}/join.do">회원가입</a>
+					</button>
 				</div>
 			</div>
 			<div class="row">
@@ -90,11 +92,14 @@ button:focus {
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-5">
-							<form action="loginProc.jsp" method="post">
+							<form action="${pageContext.request.contextPath}/login_ok.do"
+								method="post">
 								<input type="text" placeholder="이메일(example@gmail.com)"
-									class="loginInfo" name="uid"> <br> <input
-									type="password" placeholder="패스워드" class="loginInfo" name="upw"><br>
-								<a href="find_pw.jsp" id="find_pw">비밀번호를 잊으셨나요?</a>
+									class="loginInfo" name="user_id"> <br> <input
+									type="password" placeholder="패스워드" class="loginInfo"
+									name="user_pw"><br> <a
+									href="${pageContext.request.contextPath}/find_pw.do"
+									id="find_pw">비밀번호를 잊으셨나요?</a>
 
 								<hr style="width: 300px;">
 						</div>
